@@ -6,9 +6,9 @@
 <body>
     <h1>{{ $brand->name }}</h1>
 
-    <p>Country: {{ $brand->country }}</p>
-    <p>Description: {{ $brand->description }}</p>
+    <p>Land: {{ $brand->country }}</p>
+    <p>Beschrijving: {{ $brand->description }}</p>
 
-    <a href="/brands">Back to brands</a>
+    <a href="/brands">Terug naar alle Merken</a>
 </body>
 </html>

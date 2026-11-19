@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SoleStore - Brands</title>
+    <title>SoleStore - Merken</title>
 </head>
 <body>
-    <h1>All Brands</h1>
+    <h1>Alle Merken</h1>
 
     @foreach ($brands as $brand)
         <h2>

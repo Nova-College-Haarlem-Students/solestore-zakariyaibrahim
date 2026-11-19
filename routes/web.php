@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BrandController;
+use App\Http\Controllers\SneakerController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -16,5 +17,7 @@ Route::get('/contact', function () {
 });
 
 Route::get('/brands', [BrandController::class, 'index']);
-
 Route::get('/brands/{id}', [BrandController::class, 'show']);
+
+Route::get('/sneakers', [SneakerController::class, 'index']);
+Route::get('/sneakers/{id}', [SneakerController::class, 'show']);
