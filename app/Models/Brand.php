@@ -11,4 +11,10 @@ class Brand extends Model
         'country',
         'description',
     ];
+
+
+    public function sneakers()
+    {
+        return $this->hasMany(Sneaker::class);
+    }
 }

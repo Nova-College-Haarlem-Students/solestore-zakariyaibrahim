@@ -5,7 +5,7 @@ use App\Http\Controllers\BrandController;
 use App\Http\Controllers\SneakerController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome'); 
 });
 
 Route::get('/over', function () {
@@ -17,7 +17,7 @@ Route::get('/contact', function () {
 });
 
 Route::get('/brands', [BrandController::class, 'index']);
-Route::get('/brands/{id}', [BrandController::class, 'show']);
+Route::get('/brands/{brand}', [BrandController::class, 'show']);
 
 Route::get('/sneakers', [SneakerController::class, 'index']);
-Route::get('/sneakers/{id}', [SneakerController::class, 'show']);
+Route::get('/sneakers/{sneaker}', [SneakerController::class, 'show']);

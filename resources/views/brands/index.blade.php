@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>SoleStore - Merken</title>
-</head>
-<body>
+<x-layout title="SoleStore - Merken">
     <h1>Alle Merken</h1>
 
     @foreach ($brands as $brand)
@@ -15,6 +10,4 @@
 
         <p>{{ $brand->country }}</p>
     @endforeach
-
-</body>
-</html>
+</x-layout>

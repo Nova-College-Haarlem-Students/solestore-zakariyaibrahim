@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Alle Sneakers</title>
-</head>
-<body>
+<x-layout title="Alle Sneakers">
     <h1>Alle Sneakers</h1>
     <ul>
         @foreach($sneakers as $sneaker)
@@ -14,5 +9,4 @@
             </li>
         @endforeach
     </ul>
-</body>
-</html>
+</x-layout>
