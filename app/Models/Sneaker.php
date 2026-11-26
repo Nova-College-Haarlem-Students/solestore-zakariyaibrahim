@@ -19,4 +19,27 @@ class Sneaker extends Model
         return $this->belongsTo(Brand::class);
     }
 
+
+    public function prices()
+    {
+        return $this->hasMany(Price::class);
+    }
+
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
+
+    public function orderrows()
+    {
+        return $this->hasMany(Orderrow::class);
+    }
+
+    public function currentPrice()
+    {
+        return $this->prices()
+            ->where('in_effect_date', '<=', now())
+            ->orderBy('in_effect_date', 'desc')
+            ->first();
+    }
 }
